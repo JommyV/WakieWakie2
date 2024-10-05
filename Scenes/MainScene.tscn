@@ -1,0 +1,55 @@
+[gd_scene load_steps=9 format=3 uid="uid://dej2p0cykjjqc"]
+
+[ext_resource type="Script" path="res://Scripts/main_scene.gd" id="1_k71d1"]
+[ext_resource type="Shader" path="res://Shader/new_shader.gdshader" id="2_bdb6v"]
+[ext_resource type="Texture2D" uid="uid://y6csg6fqvrjn" path="res://Sprites/jeremy-thomas-4dpAqfTbvKA-unsplash.jpg" id="2_q7j27"]
+[ext_resource type="Script" path="res://Scripts/node.gd" id="4_37irm"]
+[ext_resource type="PackedScene" uid="uid://dte1sf7dcqd5i" path="res://Scenes/boy.tscn" id="4_wykaf"]
+[ext_resource type="PackedScene" uid="uid://b6tkivkjtidkj" path="res://Scenes/bed.tscn" id="6_t7x7x"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v11qh"]
+shader = ExtResource("2_bdb6v")
+shader_parameter/offset = Vector2(98.115, 0)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3hrai"]
+size = Vector2(1737, 222)
+
+[node name="Node" type="Node"]
+script = ExtResource("1_k71d1")
+
+[node name="Jeremy-thomas-4DpAqfTbvKa-unsplash" type="Sprite2D" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_v11qh")
+position = Vector2(53761, 310)
+scale = Vector2(20.453, 0.84384)
+texture = ExtResource("2_q7j27")
+
+[node name="Boy" parent="." instance=ExtResource("4_wykaf")]
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("4_37irm")
+
+[node name="Bed" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(1863, 209)
+scale = Vector2(4.32, 4.32)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(863.5, 953)
+shape = SubResource("RectangleShape2D_3hrai")
+
+[node name="RigidBody2D2" type="RigidBody2D" parent="."]
+position = Vector2(328, -83)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D2"]
+position = Vector2(1509, 403)
+rotation = 1.57079
+shape = SubResource("RectangleShape2D_3hrai")
+
+[node name="RigidBody2D3" type="RigidBody2D" parent="."]
+position = Vector2(-123, 199)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D3"]
+rotation = 1.57079
+shape = SubResource("RectangleShape2D_3hrai")
