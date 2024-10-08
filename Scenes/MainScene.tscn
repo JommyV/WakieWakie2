@@ -1,28 +1,26 @@
-[gd_scene load_steps=9 format=3 uid="uid://dej2p0cykjjqc"]
+[gd_scene load_steps=7 format=3 uid="uid://dej2p0cykjjqc"]
 
 [ext_resource type="Script" path="res://Scripts/main_scene.gd" id="1_k71d1"]
-[ext_resource type="Shader" path="res://Shader/new_shader.gdshader" id="2_bdb6v"]
-[ext_resource type="Texture2D" uid="uid://y6csg6fqvrjn" path="res://Sprites/jeremy-thomas-4dpAqfTbvKA-unsplash.jpg" id="2_q7j27"]
+[ext_resource type="Texture2D" uid="uid://djcrfimvlju0p" path="res://Sprites/2211.w026.n002.2699B.p1.2699.jpg" id="2_ymfyd"]
 [ext_resource type="Script" path="res://Scripts/node.gd" id="4_37irm"]
 [ext_resource type="PackedScene" uid="uid://dte1sf7dcqd5i" path="res://Scenes/boy.tscn" id="4_wykaf"]
+[ext_resource type="PackedScene" uid="uid://bpg57dkcxgcsr" path="res://Scenes/mega_bed.tscn" id="6_1b46r"]
 [ext_resource type="PackedScene" uid="uid://b6tkivkjtidkj" path="res://Scenes/bed.tscn" id="6_t7x7x"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_v11qh"]
-shader = ExtResource("2_bdb6v")
-shader_parameter/offset = Vector2(98.115, 0)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3hrai"]
-size = Vector2(1737, 222)
 
 [node name="Node" type="Node"]
 script = ExtResource("1_k71d1")
 
-[node name="Jeremy-thomas-4DpAqfTbvKa-unsplash" type="Sprite2D" parent="."]
-texture_repeat = 2
-material = SubResource("ShaderMaterial_v11qh")
-position = Vector2(53761, 310)
-scale = Vector2(20.453, 0.84384)
-texture = ExtResource("2_q7j27")
+[node name="2211_w026_n002_2699b_p1_2699" type="Sprite2D" parent="."]
+position = Vector2(3510, 181)
+texture = ExtResource("2_ymfyd")
+
+[node name="2211_w026_n002_2699b_p1_2700" type="Sprite2D" parent="."]
+position = Vector2(10500, 181)
+texture = ExtResource("2_ymfyd")
+
+[node name="2211_w026_n002_2699b_p1_2701" type="Sprite2D" parent="."]
+position = Vector2(17503, 181)
+texture = ExtResource("2_ymfyd")
 
 [node name="Boy" parent="." instance=ExtResource("4_wykaf")]
 
@@ -33,23 +31,38 @@ script = ExtResource("4_37irm")
 position = Vector2(1863, 209)
 scale = Vector2(4.32, 4.32)
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
+[node name="Bed2" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(5450, 318)
+scale = Vector2(4.32, 4.32)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-position = Vector2(863.5, 953)
-shape = SubResource("RectangleShape2D_3hrai")
+[node name="Bed3" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(5298, -39)
+scale = Vector2(4.32, 4.32)
 
-[node name="RigidBody2D2" type="RigidBody2D" parent="."]
-position = Vector2(328, -83)
+[node name="Bed4" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(4928, 589)
+scale = Vector2(4.32, 4.32)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D2"]
-position = Vector2(1509, 403)
-rotation = 1.57079
-shape = SubResource("RectangleShape2D_3hrai")
+[node name="Bed5" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(4172, 168)
+scale = Vector2(4.32, 4.32)
 
-[node name="RigidBody2D3" type="RigidBody2D" parent="."]
-position = Vector2(-123, 199)
+[node name="Bed6" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(3373, 38)
+scale = Vector2(4.32, 4.32)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D3"]
-rotation = 1.57079
-shape = SubResource("RectangleShape2D_3hrai")
+[node name="Bed7" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(4215, -399)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed8" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(3128, 612)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed9" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(2703, -406)
+scale = Vector2(4.32, 4.32)
+
+[node name="MegaBed" parent="." instance=ExtResource("6_1b46r")]
+position = Vector2(10889, 1595)
+scale = Vector2(286.097, 51.803)

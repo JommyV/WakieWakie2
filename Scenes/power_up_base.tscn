@@ -6,7 +6,7 @@
 radius = 63.0
 
 [node name="PowerUpBase" type="Area2D"]
-position = Vector2(536, 244)
+position = Vector2(522, 315)
 script = ExtResource("1_ny8sw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

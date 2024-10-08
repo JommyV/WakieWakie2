@@ -1,47 +1,29 @@
-[gd_scene load_steps=7 format=3 uid="uid://b6tkivkjtidkj"]
+[gd_scene load_steps=5 format=3 uid="uid://b6tkivkjtidkj"]
 
 [ext_resource type="Script" path="res://Scripts/bed.gd" id="1_uonbl"]
-[ext_resource type="Texture2D" uid="uid://dsb7tunulb8y1" path="res://Sprites/pngegg (9).png" id="1_uvuy2"]
+[ext_resource type="Texture2D" uid="uid://xgfuj08f3q08" path="res://Sprites/bed.png" id="2_xhpg7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gq0pq"]
-size = Vector2(51, 58)
+size = Vector2(77.744, 18.0029)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fvbqv"]
-size = Vector2(58, 25)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_drdom"]
-size = Vector2(56.5, 24.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_joij4"]
-size = Vector2(56.5, 24.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yqlct"]
+size = Vector2(3, 37)
 
 [node name="Bed" type="Area2D"]
 position = Vector2(264, 135)
 script = ExtResource("1_uonbl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-35.5, -8)
+position = Vector2(2.12799, 2.00146)
 shape = SubResource("RectangleShape2D_gq0pq")
 
 [node name="Pngegg(9)" type="Sprite2D" parent="."]
-position = Vector2(-4, 6)
-scale = Vector2(0.0387097, 0.0387097)
-texture = ExtResource("1_uvuy2")
+position = Vector2(133, 154)
+scale = Vector2(0.144022, 0.144022)
+texture = ExtResource("2_xhpg7")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(-28, 7)
-shape = SubResource("RectangleShape2D_fvbqv")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
-position = Vector2(-9.5, 9.25)
-shape = SubResource("RectangleShape2D_drdom")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
-position = Vector2(15, 19)
-shape = SubResource("RectangleShape2D_joij4")
-
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
-position = Vector2(22.75, 33)
-shape = SubResource("RectangleShape2D_drdom")
+position = Vector2(41.5, -5.5)
+shape = SubResource("RectangleShape2D_yqlct")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
