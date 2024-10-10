@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://igj5lxt2uugw"]
+
+[ext_resource type="PackedScene" uid="uid://gq11c0ujtix0" path="res://Scenes/power_up_base.tscn" id="1_741i1"]
+[ext_resource type="Texture2D" uid="uid://c2f32hxppkwik" path="res://Sprites/sleepmask.png" id="2_d1kv2"]
+[ext_resource type="Script" path="res://Scripts/sleep_mask.gd" id="2_daryb"]
+
+[node name="SleepMask" instance=ExtResource("1_741i1")]
+script = ExtResource("2_daryb")
+
+[node name="Sprite2D" parent="." index="1"]
+position = Vector2(3, 2)
+scale = Vector2(0.276, 0.276)
+texture = ExtResource("2_d1kv2")

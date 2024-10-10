@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/power_up_base.gd" id="1_ny8sw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_35kmw"]
-radius = 63.0
+radius = 57.9828
 
 [node name="PowerUpBase" type="Area2D"]
 position = Vector2(522, 315)
@@ -12,5 +12,7 @@ script = ExtResource("1_ny8sw")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -1)
 shape = SubResource("CircleShape2D_35kmw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

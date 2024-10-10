@@ -1,23 +1,42 @@
-[gd_scene load_steps=9 format=3 uid="uid://dte1sf7dcqd5i"]
+[gd_scene load_steps=12 format=3 uid="uid://dte1sf7dcqd5i"]
 
 [ext_resource type="Script" path="res://Scripts/boy.gd" id="1_tjgl3"]
-[ext_resource type="Texture2D" uid="uid://b3ryrq00kk152" path="res://Sprites/icon.svg" id="2_rmgbj"]
-[ext_resource type="Script" path="res://Scripts/camera_2d.gd" id="3_2qngs"]
+[ext_resource type="Texture2D" uid="uid://cj6f8ewkot7my" path="res://Sprites/flipflop_idle_big.png" id="2_e2xjr"]
+[ext_resource type="Texture2D" uid="uid://bdgk3n0rkwiqc" path="res://Sprites/flipflop_move_big.png" id="3_f008s"]
+[ext_resource type="Texture2D" uid="uid://bkuwr6qy8jgwa" path="res://Sprites/sleepy_guy_rotate.png" id="3_ukp0w"]
+[ext_resource type="Texture2D" uid="uid://d3kxn4s5455dl" path="res://Sprites/flipflop_hit_big.png" id="4_25yvj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ikvoa"]
-size = Vector2(123, 123)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wo4he"]
-size = Vector2(73.5, 150)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yjqk0"]
-size = Vector2(72.5, 141)
+size = Vector2(267, 123)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5f258"]
-size = Vector2(81, 162)
+size = Vector2(81, 279)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_arg7b"]
 size = Vector2(84, 76)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wo4he"]
+size = Vector2(99.75, 209)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yjqk0"]
+size = Vector2(103.25, 206.5)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ulipk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_e2xjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f008s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_25yvj")
+}],
+"loop": false,
+"name": &"default",
+"speed": 12.0
+}]
 
 [node name="Boy" type="CharacterBody2D"]
 position = Vector2(562, 201)
@@ -25,18 +44,26 @@ input_pickable = true
 script = ExtResource("1_tjgl3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1.5, 3.5)
+position = Vector2(-5.5, 3.5)
 shape = SubResource("RectangleShape2D_ikvoa")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-unique_name_in_owner = true
-texture = ExtResource("2_rmgbj")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.5, 0.5)
 position_smoothing_enabled = true
 position_smoothing_speed = 25.0
-script = ExtResource("3_2qngs")
+
+[node name="Jump" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Jump"]
+position = Vector2(-6.5, 106)
+rotation = 1.57079
+shape = SubResource("RectangleShape2D_5f258")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jump"]
+position = Vector2(-1, 28)
+shape = SubResource("RectangleShape2D_arg7b")
 
 [node name="Brakes" type="Area2D" parent="."]
 position = Vector2(92, -15)
@@ -44,7 +71,7 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Brakes"]
-position = Vector2(-13, 3)
+position = Vector2(65, 56)
 shape = SubResource("RectangleShape2D_wo4he")
 
 [node name="Accelerator" type="Area2D" parent="."]
@@ -53,23 +80,48 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Accelerator"]
-position = Vector2(9, -24)
+position = Vector2(-90.625, 16.75)
 shape = SubResource("RectangleShape2D_yjqk0")
 
-[node name="Jump" type="Area2D" parent="."]
-collision_layer = 2
-collision_mask = 2
+[node name="AcceleratorChinelo" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-163, 52)
+rotation = -0.241642
+scale = Vector2(0.159741, 0.159741)
+sprite_frames = SubResource("SpriteFrames_ulipk")
+frame = 2
+frame_progress = 1.0
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Jump"]
-position = Vector2(-1, 106)
-rotation = 1.57079
-shape = SubResource("RectangleShape2D_5f258")
+[node name="JumpChinelo" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(11, 156)
+rotation = -1.90817
+scale = Vector2(0.159741, 0.159741)
+sprite_frames = SubResource("SpriteFrames_ulipk")
+frame_progress = 0.926968
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Jump"]
-position = Vector2(-1, 28)
-shape = SubResource("RectangleShape2D_arg7b")
+[node name="BrakeChinelo" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2(169, 53)
+rotation = 0.55167
+scale = Vector2(0.159741, 0.159741)
+sprite_frames = SubResource("SpriteFrames_ulipk")
+frame = 2
+frame_progress = 1.0
+flip_h = true
 
-[connection signal="input_event" from="." to="." method="_on_input_event"]
+[node name="Sprite2D" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(33, -61)
+scale = Vector2(0.268917, 0.268917)
+texture = ExtResource("3_ukp0w")
+
+[connection signal="input_event" from="Jump" to="." method="_on_jump_input_event"]
 [connection signal="input_event" from="Brakes" to="." method="_on_brakes_input_event"]
 [connection signal="input_event" from="Accelerator" to="." method="_on_accelerator_input_event"]
-[connection signal="input_event" from="Jump" to="." method="_on_jump_input_event"]
+[connection signal="animation_finished" from="AcceleratorChinelo" to="." method="_on_accelerator_chinelo_animation_finished"]
+[connection signal="animation_finished" from="JumpChinelo" to="." method="_on_jump_chinelo_animation_finished"]
+[connection signal="animation_finished" from="BrakeChinelo" to="." method="_on_brake_chinelo_animation_finished"]

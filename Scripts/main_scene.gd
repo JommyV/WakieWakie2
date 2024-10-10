@@ -1,23 +1,20 @@
 extends Node
 
 
-# Called when the node enters the scene tree for the first time.
+var chinelo = load("res://Sprites/flipflop_idle.png")
+var chinelo_2 = load("res://Sprites/flipflop_hit.png")
+var chinelo_3 = load("res://Sprites/flipflop_move.png")
+
 func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
+	#Input.set_custom_mouse_cursor(chinelopass
 	pass
 
+
 #func _input(event):
-	## Mouse in viewport coordinates.
+	# Mouse in viewport coordinates.
 	#if event is InputEventMouseButton:
-		#print("Mouse Click/Unclick at: ", event.position)
-	#elif event is InputEventMouseMotion:
-		#print("Mouse Motion at: ", event.position)
-#
-	## Print the size of the viewport.
-	#print("Viewport Resolution is: ", get_viewport().get_visible_rect().size)
-#
-#
+		#Input.set_custom_mouse_cursor(chinelo_2)
+		#await get_tree().create_timer(0.1).timeout
+		#Input.set_custom_mouse_cursor(chinelo_3)
+		#await get_tree().create_timer(0.1).timeout
+		#Input.set_custom_mouse_cursor(chinelo)

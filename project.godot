@@ -11,9 +11,17 @@ config_version=5
 [application]
 
 config/name="Wakie Wakie"
-run/main_scene="res://Scenes/MainScene.tscn"
+run/main_scene="res://Scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://Sprites/icon.svg"
+
+[autoload]
+
+GameManager="*res://Scripts/GameManager.gd"
+
+[editor]
+
+version_control/autoload_on_startup=true
 
 [input]
 

@@ -1,0 +1,14 @@
+AnimatedSprite2D
+Sprite2D
+AnimationPlayer
+Marker2D
+Button
+TextEdit
+VBoxContainer
+Label
+CollisionShape2D
+RigidBody2D
+Area2D
+Timer
+CharacterBody2D
+Camera2D

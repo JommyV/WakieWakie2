@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://b26ebx4ybq2xu"]
+
+[ext_resource type="PackedScene" uid="uid://gq11c0ujtix0" path="res://Scenes/power_up_base.tscn" id="1_sd5kw"]
+[ext_resource type="Script" path="res://Scripts/broom.gd" id="2_2nura"]
+[ext_resource type="Texture2D" uid="uid://cqp3d43l16vhj" path="res://Sprites/pngegg (10).png" id="2_2ru83"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8msgu"]
+radius = 14.2292
+height = 194.0
+
+[node name="Broom" instance=ExtResource("1_sd5kw")]
+script = ExtResource("2_2nura")
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(7, 1)
+rotation = 0.274236
+shape = SubResource("CapsuleShape2D_8msgu")
+
+[node name="Sprite2D" parent="." index="1"]
+position = Vector2(-2.00002, 5.99999)
+scale = Vector2(0.153353, 0.153353)
+texture = ExtResource("2_2ru83")

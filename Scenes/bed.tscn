@@ -26,4 +26,8 @@ texture = ExtResource("2_xhpg7")
 position = Vector2(41.5, -5.5)
 shape = SubResource("RectangleShape2D_yqlct")
 
+[node name="Marker2D" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(1, -11)
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
