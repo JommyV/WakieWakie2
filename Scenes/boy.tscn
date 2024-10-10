@@ -1,25 +1,31 @@
-[gd_scene load_steps=12 format=3 uid="uid://dte1sf7dcqd5i"]
+[gd_scene load_steps=19 format=3 uid="uid://dte1sf7dcqd5i"]
 
 [ext_resource type="Script" path="res://Scripts/boy.gd" id="1_tjgl3"]
 [ext_resource type="Texture2D" uid="uid://cj6f8ewkot7my" path="res://Sprites/flipflop_idle_big.png" id="2_e2xjr"]
 [ext_resource type="Texture2D" uid="uid://bdgk3n0rkwiqc" path="res://Sprites/flipflop_move_big.png" id="3_f008s"]
-[ext_resource type="Texture2D" uid="uid://bkuwr6qy8jgwa" path="res://Sprites/sleepy_guy_rotate.png" id="3_ukp0w"]
 [ext_resource type="Texture2D" uid="uid://d3kxn4s5455dl" path="res://Sprites/flipflop_hit_big.png" id="4_25yvj"]
+[ext_resource type="Texture2D" uid="uid://d0avw8pary00n" path="res://Sprites/sleepy_guy_fly_centrado.png" id="5_7ks51"]
+[ext_resource type="Texture2D" uid="uid://bi30oecmqb6xj" path="res://Sprites/sleepy_guy_rotatefinal.png" id="5_i5wux"]
+[ext_resource type="Texture2D" uid="uid://bhu80bqqcumm3" path="res://Sprites/sleepy_guy_rotatefinal2.png" id="6_dmeqk"]
+[ext_resource type="Texture2D" uid="uid://olvtwq5b44c2" path="res://Sprites/sleepy_guy_rotatefinal 2.png" id="7_xenr0"]
+[ext_resource type="Texture2D" uid="uid://bckkos8jse7mx" path="res://Sprites/sleepy_guy_rotatefinal3.png" id="8_vt08f"]
+[ext_resource type="AudioStream" uid="uid://bfbxjj0oahdg4" path="res://Sounds/Twinkle Twinkle Little Star  Nursery Rhymes for Kids  Super Simple Songs (mp3cut.net).mp3" id="10_yvodq"]
+[ext_resource type="AudioStream" uid="uid://bmjbcsj21gkdy" path="res://Sounds/Snore Mimimimimimimi Sound Effect (Cartoon Sleeping Sound Effect) (mp3cut.net).mp3" id="11_p6jwy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ikvoa"]
 size = Vector2(267, 123)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5f258"]
-size = Vector2(81, 279)
+size = Vector2(112, 279)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_arg7b"]
 size = Vector2(84, 76)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wo4he"]
-size = Vector2(99.75, 209)
+size = Vector2(164, 209)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yjqk0"]
-size = Vector2(103.25, 206.5)
+size = Vector2(157, 206.5)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ulipk"]
 animations = [{
@@ -38,6 +44,26 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_4t7no"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_i5wux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dmeqk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xenr0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vt08f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Boy" type="CharacterBody2D"]
 position = Vector2(562, 201)
 input_pickable = true
@@ -49,7 +75,6 @@ shape = SubResource("RectangleShape2D_ikvoa")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.5, 0.5)
-position_smoothing_enabled = true
 position_smoothing_speed = 25.0
 
 [node name="Jump" type="Area2D" parent="."]
@@ -57,7 +82,7 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Jump"]
-position = Vector2(-6.5, 106)
+position = Vector2(-6.49982, 138)
 rotation = 1.57079
 shape = SubResource("RectangleShape2D_5f258")
 
@@ -71,7 +96,7 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Brakes"]
-position = Vector2(65, 56)
+position = Vector2(64, 56)
 shape = SubResource("RectangleShape2D_wo4he")
 
 [node name="Accelerator" type="Area2D" parent="."]
@@ -80,7 +105,7 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Accelerator"]
-position = Vector2(-90.625, 16.75)
+position = Vector2(-89.5, 16.75)
 shape = SubResource("RectangleShape2D_yjqk0")
 
 [node name="AcceleratorChinelo" type="AnimatedSprite2D" parent="."]
@@ -113,11 +138,32 @@ frame = 2
 frame_progress = 1.0
 flip_h = true
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="SpinAnimation" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
-position = Vector2(33, -61)
+visible = false
+position = Vector2(-52, -64)
 scale = Vector2(0.268917, 0.268917)
-texture = ExtResource("3_ukp0w")
+sprite_frames = SubResource("SpriteFrames_4t7no")
+autoplay = "default"
+frame_progress = 0.0617034
+flip_h = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(16, 102)
+scale = Vector2(0.236333, 0.236333)
+texture = ExtResource("5_7ks51")
+
+[node name="MainMusic" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("10_yvodq")
+autoplay = true
+parameters/looping = true
+
+[node name="Snore" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("11_p6jwy")
+parameters/looping = true
 
 [connection signal="input_event" from="Jump" to="." method="_on_jump_input_event"]
 [connection signal="input_event" from="Brakes" to="." method="_on_brakes_input_event"]

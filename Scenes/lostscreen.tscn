@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1ky6yfdmpha5"]
+
+[ext_resource type="Script" path="res://Scenes/lostscreen.gd" id="1_h6xx1"]
+[ext_resource type="FontFile" uid="uid://d1eukkbercapc" path="res://Fonts/Drowsy-8mA2.ttf" id="1_xao8f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wquuv"]
+font = ExtResource("1_xao8f")
+font_size = 150
+font_color = Color(0, 0, 0, 1)
+
+[node name="LOSTSCREEN" type="CanvasLayer"]
+visible = false
+script = ExtResource("1_h6xx1")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.5
+offset_top = -19.5
+offset_right = 70.5
+offset_bottom = 19.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "BOY WENT TO SLEEP
+PRESS T TO TRY AGAIN"
+label_settings = SubResource("LabelSettings_wquuv")

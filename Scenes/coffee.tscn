@@ -2,12 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://gq11c0ujtix0" path="res://Scenes/power_up_base.tscn" id="1_fhc7a"]
 [ext_resource type="Script" path="res://Scripts/coffee.gd" id="2_1afyq"]
-[ext_resource type="Texture2D" uid="uid://dtgi0uyjd7ofq" path="res://Sprites/caneca.png" id="3_07o4g"]
+[ext_resource type="Texture2D" uid="uid://16cs0yv8rxu2" path="res://Sprites/pngegg (15).png" id="3_61x7y"]
 
 [node name="Coffee" instance=ExtResource("1_fhc7a")]
 script = ExtResource("2_1afyq")
 
 [node name="Sprite2D" parent="." index="1"]
-position = Vector2(1.99999, -7.00001)
-scale = Vector2(0.0518519, 0.0518519)
-texture = ExtResource("3_07o4g")
+position = Vector2(1.00003, -3.99999)
+scale = Vector2(0.0953296, 0.0953295)
+texture = ExtResource("3_61x7y")

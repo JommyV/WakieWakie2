@@ -1,0 +1,228 @@
+[gd_scene load_steps=17 format=3 uid="uid://dej2p0cykjjqc"]
+
+[ext_resource type="Script" path="res://Scripts/main_scene.gd" id="1_k71d1"]
+[ext_resource type="Texture2D" uid="uid://b025r782mfcis" path="res://Sprites/vecteezy_bright-cloudy-sky-cartoon-vector-illustration-background_6631117.jpg" id="2_8qloa"]
+[ext_resource type="PackedScene" uid="uid://dte1sf7dcqd5i" path="res://Scenes/boy.tscn" id="4_wykaf"]
+[ext_resource type="PackedScene" uid="uid://bpg57dkcxgcsr" path="res://Scenes/mega_bed.tscn" id="6_1b46r"]
+[ext_resource type="PackedScene" uid="uid://b6tkivkjtidkj" path="res://Scenes/bed.tscn" id="6_t7x7x"]
+[ext_resource type="PackedScene" uid="uid://b26ebx4ybq2xu" path="res://Scenes/broom.tscn" id="7_4rp78"]
+[ext_resource type="PackedScene" uid="uid://bfv0gv5ivmvm6" path="res://Scenes/coffee.tscn" id="8_65fuh"]
+[ext_resource type="Texture2D" uid="uid://ba1hs137x4rh1" path="res://Sprites/school.png" id="9_nnr2v"]
+[ext_resource type="PackedScene" uid="uid://igj5lxt2uugw" path="res://Scenes/sleep_mask.tscn" id="9_qcrj3"]
+[ext_resource type="Texture2D" uid="uid://c0taybp62m1q1" path="res://Sprites/pngegg (13).png" id="10_8qmgm"]
+[ext_resource type="Script" path="res://Scenes/school.gd" id="11_3tn0n"]
+[ext_resource type="PackedScene" uid="uid://dd2wl1dhcbq1j" path="res://Scenes/hud.tscn" id="12_sqshb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4skwu"]
+size = Vector2(43964.8, 269)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l6yci"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tlg2l"]
+size = Vector2(472.715, 306.785)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ilunu"]
+size = Vector2(86.3202, 229.823)
+
+[node name="Level1" type="Node"]
+script = ExtResource("1_k71d1")
+
+[node name="2211_w026_n002_2699b_p1_2699" type="Sprite2D" parent="."]
+position = Vector2(3611, -699)
+scale = Vector2(3.8043, 4.01358)
+texture = ExtResource("2_8qloa")
+
+[node name="2211_w026_n002_2699b_p1_2705" type="Sprite2D" parent="."]
+position = Vector2(-2527, -729)
+scale = Vector2(3.8043, 4.01358)
+texture = ExtResource("2_8qloa")
+
+[node name="2211_w026_n002_2699b_p1_2700" type="Sprite2D" parent="."]
+position = Vector2(17918, -554)
+scale = Vector2(3.47964, 3.47964)
+texture = ExtResource("2_8qloa")
+
+[node name="2211_w026_n002_2699b_p1_2701" type="Sprite2D" parent="."]
+position = Vector2(10971, -300)
+scale = Vector2(3.90272, 3.90271)
+texture = ExtResource("2_8qloa")
+
+[node name="2211_w026_n002_2699b_p1_2702" type="Sprite2D" parent="."]
+position = Vector2(39305, -409)
+scale = Vector2(3.90272, 3.90271)
+texture = ExtResource("2_8qloa")
+
+[node name="2211_w026_n002_2699b_p1_2703" type="Sprite2D" parent="."]
+position = Vector2(24884, 255)
+scale = Vector2(3.90272, 3.90271)
+texture = ExtResource("2_8qloa")
+
+[node name="2211_w026_n002_2699b_p1_2704" type="Sprite2D" parent="."]
+position = Vector2(32081, -347)
+scale = Vector2(3.90272, 3.90271)
+texture = ExtResource("2_8qloa")
+
+[node name="Pngegg(13)" type="Sprite2D" parent="."]
+position = Vector2(-575, 395)
+scale = Vector2(5.065, 5.065)
+texture = ExtResource("10_8qmgm")
+
+[node name="Boy" parent="." instance=ExtResource("4_wykaf")]
+position = Vector2(-166, 464)
+
+[node name="Bed" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(1487, -36)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed2" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(4634, -50)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed10" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(5914, -863)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed3" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(13347, -815)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed12" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(20963, -258)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed13" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(16545, 551)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed14" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(6945, -156)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed15" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(19237, 348)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed17" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(5767, 651)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed18" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(23610, -858)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed19" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(8723, 186)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed20" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(11075, 255)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed21" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(11416, -611)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed22" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(13145, 553)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed23" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(15701, -394)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed16" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(8977, -758)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed11" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(3257, -442)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed4" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(3352, 253)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed5" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(26715, -442)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed6" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(3854, 1333)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed7" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(1753, 718)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed8" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(25523, 513)
+scale = Vector2(4.32, 4.32)
+
+[node name="Bed9" parent="." instance=ExtResource("6_t7x7x")]
+position = Vector2(18156, -798)
+scale = Vector2(4.32, 4.32)
+
+[node name="Broom" parent="." instance=ExtResource("7_4rp78")]
+position = Vector2(7608, 398)
+
+[node name="Broom2" parent="." instance=ExtResource("7_4rp78")]
+position = Vector2(12738, 439)
+
+[node name="Coffee" parent="." instance=ExtResource("8_65fuh")]
+position = Vector2(14048, -272)
+
+[node name="SleepMask" parent="." instance=ExtResource("9_qcrj3")]
+position = Vector2(21866, -694)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(513, -1240)
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(21291, 65)
+shape = SubResource("RectangleShape2D_4skwu")
+
+[node name="MegaBed" parent="." instance=ExtResource("6_1b46r")]
+position = Vector2(3249, 1292)
+scale = Vector2(90.36, 20.48)
+
+[node name="MegaBed3" parent="." instance=ExtResource("6_1b46r")]
+position = Vector2(24632, 1220)
+scale = Vector2(90.36, 20.48)
+
+[node name="MegaBed4" parent="." instance=ExtResource("6_1b46r")]
+position = Vector2(17633, 1268)
+scale = Vector2(90.36, 20.48)
+
+[node name="MegaBed5" parent="." instance=ExtResource("6_1b46r")]
+position = Vector2(10465, 1316)
+scale = Vector2(90.36, 20.48)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_l6yci")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="School" type="Sprite2D" parent="."]
+position = Vector2(31893, -911)
+scale = Vector2(10.1309, 10.1309)
+texture = ExtResource("9_nnr2v")
+script = ExtResource("11_3tn0n")
+
+[node name="Area2D" type="Area2D" parent="School"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="School/Area2D"]
+position = Vector2(-0.246338, 66.4307)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_tlg2l")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="School/Area2D"]
+position = Vector2(7.03296, -106.21)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_ilunu")
+
+[node name="HUD" parent="." instance=ExtResource("12_sqshb")]
+unique_name_in_owner = true
+visible = false
+
+[connection signal="body_entered" from="School/Area2D" to="School" method="_on_area_2d_body_entered"]

@@ -4,6 +4,7 @@ extends Node
 @onready var broom_glide: bool = false 
 @onready var i_sleep: bool = false
 @onready var player_name: String
+@onready var lost: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func coffee_rush() -> void:

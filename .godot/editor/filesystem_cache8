@@ -1,33 +1,47 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1728554182
+::res://::1728599716
 ::res://Fonts/::1728553520
 Drowsy-8mA2.ttf::FontFile::8993662221461606880::1728553505::1728553520::1::::<><>::
-::res://Scenes/::1728560876
-bed.tscn::PackedScene::4602120588951169145::1728560876::0::1::::<><>::res://Scripts/bed.gd<>uid://xgfuj08f3q08::::res://Sprites/bed.png
-boy.tscn::PackedScene::8502718689510478096::1728560876::0::1::::<><>::res://Scripts/boy.gd<>uid://bkuwr6qy8jgwa::::res://Sprites/sleepy_guy_rotate.png
-broom.tscn::PackedScene::4345761079989627998::1728560876::0::1::::<><>::uid://gq11c0ujtix0::::res://Scenes/power_up_base.tscn<>res://Scripts/broom.gd<>uid://cqp3d43l16vhj::::res://Sprites/pngegg (10).png
-coffee.tscn::PackedScene::2782246624027637563::1728560876::0::1::::<><>::uid://gq11c0ujtix0::::res://Scenes/power_up_base.tscn<>res://Scripts/coffee.gd<>uid://dtgi0uyjd7ofq::::res://Sprites/caneca.png
-MainScene.tscn::PackedScene::7460264288408779310::1728560875::0::1::::<><>::res://Scripts/main_scene.gd<>uid://cgcri7p6arhqf::::res://Sprites/9c8b1007-62eb-4a38-bd2c-0a101293aa38_scaled.png<>res://Scripts/node.gd<>uid://dte1sf7dcqd5i::::res://Scenes/boy.tscn<>uid://bpg57dkcxgcsr::::res://Scenes/mega_bed.tscn<>uid://b6tkivkjtidkj::::res://Scenes/bed.tscn<>uid://b26ebx4ybq2xu::::res://Scenes/broom.tscn<>uid://bfv0gv5ivmvm6::::res://Scenes/coffee.tscn<>uid://igj5lxt2uugw::::res://Scenes/sleep_mask.tscn
-main_menu.tscn::PackedScene::1286749268872209033::1728560876::0::1::::<><>::uid://d1eukkbercapc::::res://Fonts/Drowsy-8mA2.ttf<>res://Scripts/main_menu.gd
-mega_bed.tscn::PackedScene::3453518433115835997::1728560876::0::1::::<><>::res://Scripts/bed.gd<>uid://xgfuj08f3q08::::res://Sprites/bed.png
-power_up_base.tscn::PackedScene::455788322934909103::1728560876::0::1::::<><>::res://Scripts/power_up_base.gd
-sleep_mask.tscn::PackedScene::574497656568179490::1728560876::0::1::::<><>::uid://gq11c0ujtix0::::res://Scenes/power_up_base.tscn<>uid://c2f32hxppkwik::::res://Sprites/sleepmask.png<>res://Scripts/sleep_mask.gd
-::res://Scripts/::1728560875
-bed.gd::GDScript::-1::1728556549::0::1::::<>Area2D<>::
-boy.gd::GDScript::-1::1728559895::0::1::::<>CharacterBody2D<>::
+::res://Scenes/::1728599933
+bed.tscn::PackedScene::4602120588951169145::1728599057::0::1::::<><>::res://Scripts/bed.gd<>uid://xgfuj08f3q08::::res://Sprites/bed.png
+boy.tscn::PackedScene::8502718689510478096::1728599933::0::1::::<><>::res://Scripts/boy.gd<>uid://cj6f8ewkot7my::::res://Sprites/flipflop_idle_big.png<>uid://bdgk3n0rkwiqc::::res://Sprites/flipflop_move_big.png<>uid://d3kxn4s5455dl::::res://Sprites/flipflop_hit_big.png<>uid://d0avw8pary00n::::res://Sprites/sleepy_guy_fly_centrado.png<>uid://bi30oecmqb6xj::::res://Sprites/sleepy_guy_rotatefinal.png<>uid://bhu80bqqcumm3::::res://Sprites/sleepy_guy_rotatefinal2.png<>uid://olvtwq5b44c2::::res://Sprites/sleepy_guy_rotatefinal 2.png<>uid://bckkos8jse7mx::::res://Sprites/sleepy_guy_rotatefinal3.png<>uid://bfbxjj0oahdg4::::res://Sounds/Twinkle Twinkle Little Star  Nursery Rhymes for Kids  Super Simple Songs (mp3cut.net).mp3
+broom.tscn::PackedScene::4345761079989627998::1728590952::0::1::::<><>::uid://gq11c0ujtix0::::res://Scenes/power_up_base.tscn<>res://Scripts/broom.gd<>uid://cqp3d43l16vhj::::res://Sprites/pngegg (10).png
+coffee.tscn::PackedScene::2782246624027637563::1728599933::0::1::::<><>::uid://gq11c0ujtix0::::res://Scenes/power_up_base.tscn<>res://Scripts/coffee.gd<>uid://16cs0yv8rxu2::::res://Sprites/pngegg (15).png
+hud.gd::GDScript::-1::1728592000::0::1::::<>CanvasLayer<>::
+hud.tscn::PackedScene::7426923569489126661::1728599933::0::1::::<><>::res://Scenes/hud.gd
+Level1.tscn::PackedScene::7460264288408779310::1728599933::0::1::::<><>::res://Scripts/main_scene.gd<>uid://b025r782mfcis::::res://Sprites/vecteezy_bright-cloudy-sky-cartoon-vector-illustration-background_6631117.jpg<>uid://dte1sf7dcqd5i::::res://Scenes/boy.tscn<>uid://bpg57dkcxgcsr::::res://Scenes/mega_bed.tscn<>uid://b6tkivkjtidkj::::res://Scenes/bed.tscn<>uid://b26ebx4ybq2xu::::res://Scenes/broom.tscn<>uid://bfv0gv5ivmvm6::::res://Scenes/coffee.tscn<>uid://ba1hs137x4rh1::::res://Sprites/school.png<>uid://igj5lxt2uugw::::res://Scenes/sleep_mask.tscn<>uid://c0taybp62m1q1::::res://Sprites/pngegg (13).png<>res://Scenes/school.gd<>uid://dd2wl1dhcbq1j::::res://Scenes/hud.tscn<>uid://c4gh4g7f5n66w::::res://Scenes/tutorialhud.tscn<>uid://b1ky6yfdmpha5::::res://Scenes/lostscreen.tscn
+level2.tscn::PackedScene::5956752515325528586::1728599058::0::1::::<><>::uid://dej2p0cykjjqc::::res://Scenes/Level1.tscn
+level3.tscn::PackedScene::1770766594810828747::1728599058::0::1::::<><>::uid://dej2p0cykjjqc::::res://Scenes/Level1.tscn
+lostscreen.gd::GDScript::-1::1728599057::0::1::::<>CanvasLayer<>::
+lostscreen.tscn::PackedScene::4233488231697353234::1728599933::0::1::::<><>::res://Scenes/lostscreen.gd<>uid://d1eukkbercapc::::res://Fonts/Drowsy-8mA2.ttf
+main_menu.tscn::PackedScene::1286749268872209033::1728599933::0::1::::<><>::res://Scripts/main_menu.gd<>uid://4wvopvj070ut::::res://Sprites/Adicionar_um_titulo.png.png<>uid://b56w1vwe872t4::::res://Sprites/play.png<>uid://g8t83kavnjj0::::res://Sprites/Quit.png
+mega_bed.tscn::PackedScene::3453518433115835997::1728599058::0::1::::<><>::res://Scripts/bed.gd<>uid://xgfuj08f3q08::::res://Sprites/bed.png
+power_up_base.tscn::PackedScene::455788322934909103::1728599057::0::1::::<><>::res://Scripts/power_up_base.gd
+school.gd::GDScript::-1::1728591777::0::1::::<>Sprite2D<>::
+sleep_mask.tscn::PackedScene::574497656568179490::1728590952::0::1::::<><>::uid://gq11c0ujtix0::::res://Scenes/power_up_base.tscn<>uid://c2f32hxppkwik::::res://Sprites/sleepmask.png<>res://Scripts/sleep_mask.gd
+tutorialhud.gd::GDScript::-1::1728597920::0::1::::<>CanvasLayer<>::
+tutorialhud.tscn::PackedScene::6821181271227764376::1728599933::0::1::::<><>::res://Scenes/tutorialhud.gd<>uid://d1eukkbercapc::::res://Fonts/Drowsy-8mA2.ttf<>uid://3rvukqcsmjda::::res://Sprites/pngegg (14).png
+::res://Scripts/::1728599932
+bed.gd::GDScript::-1::1728598882::0::1::::<>Area2D<>::
+boy.gd::GDScript::-1::1728599194::0::1::::<>CharacterBody2D<>::
 broom.gd::GDScript::-1::1728557573::0::1::::<>Area2D<>::
-coffee.gd::GDScript::-1::1728557596::0::1::::<>Area2D<>::
-GameManager.gd::GDScript::-1::1728557527::0::1::::<>Node<>::
-main_menu.gd::GDScript::-1::1728556515::0::1::::<>Control<>::
-main_scene.gd::GDScript::-1::1728560875::0::1::::<>Node<>::
-node.gd::GDScript::-1::1728556497::0::1::::<>Node<>::
+coffee.gd::GDScript::-1::1728599212::0::1::::<>Area2D<>::
+GameManager.gd::GDScript::-1::1728598863::0::1::::<>Node<>::
+main_menu.gd::GDScript::-1::1728589183::0::1::::<>Control<>::
+main_scene.gd::GDScript::-1::1728599932::0::1::::<>Node<>::
 power_up_base.gd::GDScript::-1::1728553487::0::1::::power_ups<>Area2D<>::
 sleep_mask.gd::GDScript::-1::1728557596::0::1::::<>Area2D<>::
-::res://Shader/::1728560876
-new_shader.gdshader::Shader::-1::1728560876::0::1::::<><>::
-::res://Sprites/::1728561012
+::res://Shader/::1728599933
+new_shader.gdshader::Shader::-1::1728599933::0::1::::<><>::
+::res://Sounds/::1728600004
+Snore Mimimimimimimi Sound Effect (Cartoon Sleeping Sound Effect) (mp3cut.net).mp3::AudioStreamMP3::3247331456301894934::1728600004::1728600004::1::::<><>::
+Twinkle Twinkle Little Star  Nursery Rhymes for Kids  Super Simple Songs (mp3cut.net).mp3::AudioStreamMP3::2740842354582731949::1728599682::1728599693::1::::<><>::
+::res://Sprites/::1728598445
+1.png::CompressedTexture2D::3768106474571679054::1728595853::1728595853::1::::<><>::
+2.png::CompressedTexture2D::2808445183182804499::1728595926::1728595926::1::::<><>::
 9c8b1007-62eb-4a38-bd2c-0a101293aa38_scaled.png::CompressedTexture2D::5199151365279230825::1728556614::1728556614::1::::<><>::
 2211.w026.n002.2699B.p1.2699.jpg::CompressedTexture2D::7796131956869944009::1728245286::1728245289::1::::<><>::
+Adicionar_um_titulo.png.png::CompressedTexture2D::2082193654789777935::1728595805::1728595805::1::::<><>::
 bed.png::CompressedTexture2D::1627069483878465987::1728042910::1728042911::1::::<><>::
 bucket.png::CompressedTexture2D::243197333125012099::1728549214::1728549215::1::::<><>::
 caneca.png::CompressedTexture2D::8505767815472542018::1728549214::1728549215::1::::<><>::
@@ -38,9 +52,26 @@ flipflop_idle.png::CompressedTexture2D::1377567987120918870::1728560692::1728560
 flipflop_idle_big.png::CompressedTexture2D::5468899431219985384::1728561012::1728561014::1::::<><>::
 flipflop_move.png::CompressedTexture2D::6339043254390737230::1728560692::1728560693::1::::<><>::
 flipflop_move_big.png::CompressedTexture2D::2610031375498860914::1728561012::1728561014::1::::<><>::
+next.png::CompressedTexture2D::8590595562870226569::1728598442::1728598442::1::::<><>::
+play.png::CompressedTexture2D::4557465044895495711::1728596459::1728596459::1::::<><>::
+playagain.png::CompressedTexture2D::8675758184436932076::1728596459::1728596459::1::::<><>::
 pngegg (10).png::CompressedTexture2D::5928535532052247747::1728549490::1728549490::1::::<><>::
 pngegg (12).png::CompressedTexture2D::5296577914634520281::1728556975::1728556975::1::::<><>::
+pngegg (13).png::CompressedTexture2D::6566828571858362834::1728590885::1728590885::1::::<><>::
+pngegg (14).png::CompressedTexture2D::2001693366475895754::1728592253::1728592253::1::::<><>::
+pngegg (15).png::CompressedTexture2D::1889060574398514135::1728598445::1728598445::1::::<><>::
+Quit.png::CompressedTexture2D::490471567904024231::1728596459::1728596459::1::::<><>::
+restart.png::CompressedTexture2D::6175884504666833323::1728598442::1728598442::1::::<><>::
+school.png::CompressedTexture2D::2440553078885765028::1728589702::1728589702::1::::<><>::
 sleepmask.png::CompressedTexture2D::6680010730512216274::1728549214::1728549216::1::::<><>::
 sleepy_guy_fly.png::CompressedTexture2D::433221273824534603::1728554361::1728554362::1::::<><>::
+sleepy_guy_fly_centrado.png::CompressedTexture2D::8915299242810427987::1728588345::1728588347::1::::<><>::
 sleepy_guy_idle.png::CompressedTexture2D::2803299602740187268::1728554361::1728554362::1::::<><>::
+sleepy_guy_idle_centrado.png::CompressedTexture2D::3210548039559445549::1728588345::1728588347::1::::<><>::
 sleepy_guy_rotate.png::CompressedTexture2D::3130964461567501660::1728557303::1728557304::1::::<><>::
+sleepy_guy_rotatefinal2.png::CompressedTexture2D::2921078527820099620::1728590125::1728590126::1::::<><>::
+sleepy_guy_rotatefinal3.png::CompressedTexture2D::2548075316384112591::1728590125::1728590126::1::::<><>::
+sleepy_guy_rotatefinal 2.png::CompressedTexture2D::1006662134755545995::1728590125::1728590126::1::::<><>::
+sleepy_guy_rotatefinal.png::CompressedTexture2D::3007277149594555803::1728590125::1728590126::1::::<><>::
+sleepy_guy_rotate_centrado.png::CompressedTexture2D::8344756022688051607::1728588345::1728588346::1::::<><>::
+vecteezy_bright-cloudy-sky-cartoon-vector-illustration-background_6631117.jpg::CompressedTexture2D::4198733575251643698::1728589096::1728589109::1::::<><>::

@@ -4,17 +4,29 @@ extends Node
 var chinelo = load("res://Sprites/flipflop_idle.png")
 var chinelo_2 = load("res://Sprites/flipflop_hit.png")
 var chinelo_3 = load("res://Sprites/flipflop_move.png")
+@onready var hud: CanvasLayer = %HUD
+@onready var tutorialhud: CanvasLayer = %TUTORIALHUD
+@onready var lostscreen: CanvasLayer = %LOSTSCREEN
+@onready var audio_stream_player_2d: AudioStreamPlayer2D = %AudioStreamPlayer2D
+
+
 
 func _ready() -> void:
-	#Input.set_custom_mouse_cursor(chinelopass
-	pass
+	GameManager.i_sleep = true
+	await get_tree().create_timer(1.5).timeout
+	tutorialhud.visible = true
+	GameManager.i_sleep = false
+	get_tree().paused = true
+	lostscreen.visible = false
 
 
-#func _input(event):
-	# Mouse in viewport coordinates.
-	#if event is InputEventMouseButton:
-		#Input.set_custom_mouse_cursor(chinelo_2)
-		#await get_tree().create_timer(0.1).timeout
-		#Input.set_custom_mouse_cursor(chinelo_3)
-		#await get_tree().create_timer(0.1).timeout
-		#Input.set_custom_mouse_cursor(chinelo)
+
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("pause_game"):
+		hud.visible = true
+		get_tree().paused = true
+	if Input.is_action_just_pressed("play_again") and GameManager.lost:
+		GameManager.lost = false
+		get_tree().reload_current_scene()
+		
+		
